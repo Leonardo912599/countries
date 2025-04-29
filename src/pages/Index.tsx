@@ -50,7 +50,10 @@ const Index = () => {
                                 },
                             },
                         }}
-                        onChange={(e) => setSearch(e.target.value)}
+                        onChange={(e) => {
+                            setRegion('')
+                            setSearch(e.target.value)
+                        }}
                     />
                 </FormControl>
 
